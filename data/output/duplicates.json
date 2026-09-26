@@ -1,0 +1,11 @@
+[
+  {
+    "issue_type": "exact_duplicate",
+    "files": [
+      "Physics_2024_specimen_paper.pdf",
+      "Chemistry_2023_previous_year_paper.pdf"
+    ],
+    "sha256": "",
+    "recommended_action": "retain_earliest_download"
+  }
+]

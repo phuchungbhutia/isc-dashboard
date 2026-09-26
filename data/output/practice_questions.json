@@ -1,0 +1,327 @@
+[
+  {
+    "practice_question_id": "PQ_Biology_001",
+    "question": "Differentiate between Which and Their on the basis of Differences.",
+    "subject": "Biology",
+    "chapter": "Syllabus Aligned",
+    "topic": "Reproduction",
+    "question_type": "short_answer",
+    "marks": 2,
+    "difficulty": "medium",
+    "source_basis": [
+      "ISC Biology 2016",
+      "ISC Biology 2017",
+      "ISC Biology 2020"
+    ],
+    "reason_for_inclusion": "Ensures coverage of 'Reproduction', a core syllabus area observed in historical papers.",
+    "not_a_prediction": true,
+    "answer_outline": "1. Provide a clear, concise definition. 2. Describe the process sequentially. 3. Mention the specific biological significance or clinical/physiological consequence.",
+    "verification_notes": [
+      "Verify specific numerical values if applicable.",
+      "Ensure diagram requirements match latest CISCE guidelines."
+    ]
+  },
+  {
+    "practice_question_id": "PQ_Biology_002",
+    "question": "Describe the process of Three with the help of a well-labelled diagram. Mention its significance in Questions.",
+    "subject": "Biology",
+    "chapter": "Syllabus Aligned",
+    "topic": "Genetics",
+    "question_type": "short_answer",
+    "marks": 1,
+    "difficulty": "easy",
+    "source_basis": [
+      "ISC Biology 2016",
+      "ISC Biology 2020",
+      "ISC Biology 2023"
+    ],
+    "reason_for_inclusion": "Ensures coverage of 'Genetics', a core syllabus area observed in historical papers.",
+    "not_a_prediction": true,
+    "answer_outline": "1. Provide a clear, concise definition. 2. Describe the process sequentially. 3. Mention the specific biological significance or clinical/physiological consequence.",
+    "verification_notes": [
+      "Verify specific numerical values if applicable.",
+      "Ensure diagram requirements match latest CISCE guidelines."
+    ]
+  },
+  {
+    "practice_question_id": "PQ_Biology_003",
+    "question": "Differentiate between Secondary and Assertion on the basis of Which.",
+    "subject": "Biology",
+    "chapter": "Syllabus Aligned",
+    "topic": "Human Physiology",
+    "question_type": "short_answer",
+    "marks": 2,
+    "difficulty": "medium",
+    "source_basis": [
+      "ISC Biology 2016",
+      "ISC Biology 2023",
+      "ISC Biology 2025"
+    ],
+    "reason_for_inclusion": "Ensures coverage of 'Human Physiology', a core syllabus area observed in historical papers.",
+    "not_a_prediction": true,
+    "answer_outline": "1. Provide a clear, concise definition. 2. Describe the process sequentially. 3. Mention the specific biological significance or clinical/physiological consequence.",
+    "verification_notes": [
+      "Verify specific numerical values if applicable.",
+      "Ensure diagram requirements match latest CISCE guidelines."
+    ]
+  },
+  {
+    "practice_question_id": "PQ_Chemistry_004",
+    "question": "Give a reasoned explanation for why Assertion exhibits Electrode, whereas Standard does not.",
+    "subject": "Chemistry",
+    "chapter": "Syllabus Aligned",
+    "topic": "General / Unclassified",
+    "question_type": "short_answer",
+    "marks": 1,
+    "difficulty": "easy",
+    "source_basis": [
+      "ISC Chemistry 2020",
+      "ISC Chemistry 2023",
+      "ISC Chemistry 2024"
+    ],
+    "reason_for_inclusion": "Ensures coverage of 'General / Unclassified', a core syllabus area observed in historical papers.",
+    "not_a_prediction": true,
+    "answer_outline": "1. State the relevant chemical principle or law. 2. Provide the balanced chemical equation with state symbols. 3. Explain the mechanism or reasoning (e.g., electronic configuration, steric hindrance).",
+    "verification_notes": [
+      "Verify specific numerical values if applicable.",
+      "Ensure diagram requirements match latest CISCE guidelines."
+    ]
+  },
+  {
+    "practice_question_id": "PQ_Chemistry_005",
+    "question": "Write the balanced chemical equation for the conversion of Galvanic to Electrode. Name the reagent used.",
+    "subject": "Chemistry",
+    "chapter": "Syllabus Aligned",
+    "topic": "Electrochemistry",
+    "question_type": "short_answer",
+    "marks": 1,
+    "difficulty": "easy",
+    "source_basis": [
+      "ISC Chemistry 2023",
+      "ISC Chemistry 2024"
+    ],
+    "reason_for_inclusion": "Ensures coverage of 'Electrochemistry', a core syllabus area observed in historical papers.",
+    "not_a_prediction": true,
+    "answer_outline": "1. State the relevant chemical principle or law. 2. Provide the balanced chemical equation with state symbols. 3. Explain the mechanism or reasoning (e.g., electronic configuration, steric hindrance).",
+    "verification_notes": [
+      "Verify specific numerical values if applicable.",
+      "Ensure diagram requirements match latest CISCE guidelines."
+    ]
+  },
+  {
+    "practice_question_id": "PQ_Chemistry_006",
+    "question": "Write the balanced chemical equation for the conversion of Point to Dissociate. Name the reagent used.",
+    "subject": "Chemistry",
+    "chapter": "Syllabus Aligned",
+    "topic": "Solutions",
+    "question_type": "short_answer",
+    "marks": 1,
+    "difficulty": "easy",
+    "source_basis": [
+      "ISC Chemistry 2023",
+      "ISC Chemistry 2024"
+    ],
+    "reason_for_inclusion": "Ensures coverage of 'Solutions', a core syllabus area observed in historical papers.",
+    "not_a_prediction": true,
+    "answer_outline": "1. State the relevant chemical principle or law. 2. Provide the balanced chemical equation with state symbols. 3. Explain the mechanism or reasoning (e.g., electronic configuration, steric hindrance).",
+    "verification_notes": [
+      "Verify specific numerical values if applicable.",
+      "Ensure diagram requirements match latest CISCE guidelines."
+    ]
+  },
+  {
+    "practice_question_id": "PQ_ComputerScience_007",
+    "question": "Differentiate between Questions and Function with respect to Verify. Provide a real-world example of each.",
+    "subject": "Computer Science",
+    "chapter": "Syllabus Aligned",
+    "topic": "Data Structures",
+    "question_type": "short_answer",
+    "marks": 1,
+    "difficulty": "easy",
+    "source_basis": [
+      "ISC Computer Science 2023",
+      "ISC Computer Science 2024"
+    ],
+    "reason_for_inclusion": "Ensures coverage of 'Data Structures', a core syllabus area observed in historical papers.",
+    "not_a_prediction": true,
+    "answer_outline": "1. Provide the formal definition. 2. Write syntactically correct code with variable declarations and comments. 3. State the time/space complexity or draw the requested diagram.",
+    "verification_notes": [
+      "Verify specific numerical values if applicable.",
+      "Ensure diagram requirements match latest CISCE guidelines."
+    ]
+  },
+  {
+    "practice_question_id": "PQ_ComputerScience_008",
+    "question": "Differentiate between Assertion and Matrix with respect to Using. Provide a real-world example of each.",
+    "subject": "Computer Science",
+    "chapter": "Syllabus Aligned",
+    "topic": "General / Unclassified",
+    "question_type": "short_answer",
+    "marks": 1,
+    "difficulty": "easy",
+    "source_basis": [
+      "ISC Computer Science 2023",
+      "ISC Computer Science 2024",
+      "ISC Computer Science 2025"
+    ],
+    "reason_for_inclusion": "Ensures coverage of 'General / Unclassified', a core syllabus area observed in historical papers.",
+    "not_a_prediction": true,
+    "answer_outline": "1. Provide the formal definition. 2. Write syntactically correct code with variable declarations and comments. 3. State the time/space complexity or draw the requested diagram.",
+    "verification_notes": [
+      "Verify specific numerical values if applicable.",
+      "Ensure diagram requirements match latest CISCE guidelines."
+    ]
+  },
+  {
+    "practice_question_id": "PQ_ComputerScience_009",
+    "question": "Differentiate between Their and Using with respect to Truth. Provide a real-world example of each.",
+    "subject": "Computer Science",
+    "chapter": "Syllabus Aligned",
+    "topic": "Boolean Algebra",
+    "question_type": "short_answer",
+    "marks": 2,
+    "difficulty": "medium",
+    "source_basis": [
+      "ISC Computer Science 2023",
+      "ISC Computer Science 2024"
+    ],
+    "reason_for_inclusion": "Ensures coverage of 'Boolean Algebra', a core syllabus area observed in historical papers.",
+    "not_a_prediction": true,
+    "answer_outline": "1. Provide the formal definition. 2. Write syntactically correct code with variable declarations and comments. 3. State the time/space complexity or draw the requested diagram.",
+    "verification_notes": [
+      "Verify specific numerical values if applicable.",
+      "Ensure diagram requirements match latest CISCE guidelines."
+    ]
+  },
+  {
+    "practice_question_id": "PQ_Mathematics_010",
+    "question": "Using Passing, prove that Dripping. Hence, find the value of Uniform.",
+    "subject": "Mathematics",
+    "chapter": "Syllabus Aligned",
+    "topic": "Coordinate Geometry",
+    "question_type": "short_answer",
+    "marks": 1,
+    "difficulty": "easy",
+    "source_basis": [
+      "ISC Mathematics 2018",
+      "ISC Mathematics 2022"
+    ],
+    "reason_for_inclusion": "Ensures coverage of 'Coordinate Geometry', a core syllabus area observed in historical papers.",
+    "not_a_prediction": true,
+    "answer_outline": "1. State the theorem or formula being applied. 2. Show step-by-step algebraic manipulation or integration/differentiation. 3. State the final answer with appropriate conditions/domain.",
+    "verification_notes": [
+      "Verify specific numerical values if applicable.",
+      "Ensure diagram requirements match latest CISCE guidelines."
+    ]
+  },
+  {
+    "practice_question_id": "PQ_Mathematics_011",
+    "question": "Evaluate the Determinants of the function Symmetric. State the conditions under which this is valid.",
+    "subject": "Mathematics",
+    "chapter": "Syllabus Aligned",
+    "topic": "Algebra",
+    "question_type": "short_answer",
+    "marks": 2,
+    "difficulty": "medium",
+    "source_basis": [
+      "ISC Mathematics 2018",
+      "ISC Mathematics 2022",
+      "ISC Mathematics 2024"
+    ],
+    "reason_for_inclusion": "Ensures coverage of 'Algebra', a core syllabus area observed in historical papers.",
+    "not_a_prediction": true,
+    "answer_outline": "1. State the theorem or formula being applied. 2. Show step-by-step algebraic manipulation or integration/differentiation. 3. State the final answer with appropriate conditions/domain.",
+    "verification_notes": [
+      "Verify specific numerical values if applicable.",
+      "Ensure diagram requirements match latest CISCE guidelines."
+    ]
+  },
+  {
+    "practice_question_id": "PQ_Mathematics_012",
+    "question": "Solve the following Which: Parallel. Show all essential working steps.",
+    "subject": "Mathematics",
+    "chapter": "Syllabus Aligned",
+    "topic": "Calculus",
+    "question_type": "short_answer",
+    "marks": 1,
+    "difficulty": "easy",
+    "source_basis": [
+      "ISC Mathematics 2018",
+      "ISC Mathematics 2022",
+      "ISC Mathematics 2024"
+    ],
+    "reason_for_inclusion": "Ensures coverage of 'Calculus', a core syllabus area observed in historical papers.",
+    "not_a_prediction": true,
+    "answer_outline": "1. State the theorem or formula being applied. 2. Show step-by-step algebraic manipulation or integration/differentiation. 3. State the final answer with appropriate conditions/domain.",
+    "verification_notes": [
+      "Verify specific numerical values if applicable.",
+      "Ensure diagram requirements match latest CISCE guidelines."
+    ]
+  },
+  {
+    "practice_question_id": "PQ_Physics_013",
+    "question": "State the principle of Hydrogen. Using a labelled diagram, explain its application in Orbit.",
+    "subject": "Physics",
+    "chapter": "Syllabus Aligned",
+    "topic": "Modern Physics",
+    "question_type": "short_answer",
+    "marks": 1,
+    "difficulty": "easy",
+    "source_basis": [
+      "ISC Physics 2022",
+      "ISC Physics 2024",
+      "ISC Physics 2025"
+    ],
+    "reason_for_inclusion": "Ensures coverage of 'Modern Physics', a core syllabus area observed in historical papers.",
+    "not_a_prediction": true,
+    "answer_outline": "1. State the core principle/definition. 2. Provide the step-by-step mathematical derivation. 3. Substitute the modified variables. 4. Conclude with the final relationship and SI units.",
+    "verification_notes": [
+      "Verify specific numerical values if applicable.",
+      "Ensure diagram requirements match latest CISCE guidelines."
+    ]
+  },
+  {
+    "practice_question_id": "PQ_Physics_014",
+    "question": "A Point is connected to a Expression. Calculate the Flowing and discuss two sources of error in this measurement.",
+    "subject": "Physics",
+    "chapter": "Syllabus Aligned",
+    "topic": "Current Electricity",
+    "question_type": "short_answer",
+    "marks": 1,
+    "difficulty": "easy",
+    "source_basis": [
+      "ISC Physics 2022",
+      "ISC Physics 2024",
+      "ISC Physics 2025"
+    ],
+    "reason_for_inclusion": "Ensures coverage of 'Current Electricity', a core syllabus area observed in historical papers.",
+    "not_a_prediction": true,
+    "answer_outline": "1. State the core principle/definition. 2. Provide the step-by-step mathematical derivation. 3. Substitute the modified variables. 4. Conclude with the final relationship and SI units.",
+    "verification_notes": [
+      "Verify specific numerical values if applicable.",
+      "Ensure diagram requirements match latest CISCE guidelines."
+    ]
+  },
+  {
+    "practice_question_id": "PQ_Physics_015",
+    "question": "A Three is connected to a Point. Calculate the Connected and discuss two sources of error in this measurement.",
+    "subject": "Physics",
+    "chapter": "Syllabus Aligned",
+    "topic": "Electrostatics",
+    "question_type": "short_answer",
+    "marks": 1,
+    "difficulty": "easy",
+    "source_basis": [
+      "ISC Physics 2022",
+      "ISC Physics 2024",
+      "ISC Physics 2025"
+    ],
+    "reason_for_inclusion": "Ensures coverage of 'Electrostatics', a core syllabus area observed in historical papers.",
+    "not_a_prediction": true,
+    "answer_outline": "1. State the core principle/definition. 2. Provide the step-by-step mathematical derivation. 3. Substitute the modified variables. 4. Conclude with the final relationship and SI units.",
+    "verification_notes": [
+      "Verify specific numerical values if applicable.",
+      "Ensure diagram requirements match latest CISCE guidelines."
+    ]
+  }
+]

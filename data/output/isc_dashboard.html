@@ -1,0 +1,487 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ISC Class XII Resource Library Audit Dashboard</title>
+    
+    <link rel="stylesheet" href="https://cdn.datatables.net/1.13.6/css/jquery.dataTables.min.css">
+    
+    <style>
+        :root {
+            --bg-color: #f4f6f9;
+            --text-color: #333;
+            --header-bg: #1f77b4;
+            --success: #2ca02c;
+            --warning: #ff7f0e;
+            --danger: #d62728;
+        }
+        body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; background: var(--bg-color); color: var(--text-color); margin: 0; padding: 0; }
+        
+        .sticky-banner {
+            position: sticky; top: 0; z-index: 1000;
+            background: var(--header-bg); color: white;
+            padding: 15px 30px; box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+            display: flex; justify-content: space-between; align-items: center;
+        }
+        .sticky-banner h1 { margin: 0; font-size: 1.5rem; }
+        .sticky-banner .date { font-size: 0.9rem; opacity: 0.9; }
+
+        .container { max-width: 1400px; margin: 20px auto; padding: 0 20px; }
+        
+        .kpi-container { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 20px; margin-bottom: 30px; }
+        .kpi-card { background: white; padding: 20px; border-radius: 8px; box-shadow: 0 2px 4px rgba(0,0,0,0.05); text-align: center; border-top: 4px solid #ccc; }
+        .kpi-card.success { border-top-color: var(--success); }
+        .kpi-card.primary { border-top-color: var(--header-bg); }
+        .kpi-card.warning { border-top-color: var(--warning); }
+        .kpi-card h3 { margin: 0 0 10px 0; font-size: 0.9rem; color: #666; text-transform: uppercase; }
+        .kpi-card .kpi-value { font-size: 2rem; font-weight: bold; color: #333; }
+
+        .charts-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(500px, 1fr)); gap: 20px; margin-bottom: 30px; }
+        .chart-box { background: white; padding: 20px; border-radius: 8px; box-shadow: 0 2px 4px rgba(0,0,0,0.05); }
+
+        .table-container { background: white; padding: 20px; border-radius: 8px; box-shadow: 0 2px 4px rgba(0,0,0,0.05); }
+        .badge { padding: 4px 8px; border-radius: 4px; font-size: 0.75rem; font-weight: bold; color: white; }
+        .badge.success { background-color: var(--success); }
+        .badge.warning { background-color: var(--warning); }
+        .badge.danger { background-color: var(--danger); }
+        
+        .dataTables_wrapper .dataTables_length, .dataTables_wrapper .dataTables_filter { margin-bottom: 15px; }
+    </style>
+</head>
+<body>
+
+    <div class="sticky-banner">
+        <h1>📚 ISC Class XII Resource Library Audit</h1>
+        <span class="date">Generated: 2026-09-26 15:45</span>
+    </div>
+
+    <div class="container">
+        
+    <div class="kpi-container">
+        <div class="kpi-card">
+            <h3>Total Documents</h3>
+            <div class="kpi-value">33</div>
+        </div>
+        <div class="kpi-card success">
+            <h3>Download Success Rate</h3>
+            <div class="kpi-value">100.0%</div>
+        </div>
+        <div class="kpi-card primary">
+            <h3>Native Text Extraction</h3>
+            <div class="kpi-value">78.8%</div>
+        </div>
+        <div class="kpi-card warning">
+            <h3>Required OCR</h3>
+            <div class="kpi-value">0.0%</div>
+        </div>
+    </div>
+    
+        
+        <div class="charts-grid">
+            <div class="chart-box"><div style="height:350px; width:100%;">                        <script>window.PlotlyConfig = {MathJaxConfig: 'local'};</script>
+        <script charset="utf-8" src="https://cdn.plot.ly/plotly-4.1.1.min.js" integrity="sha256-O24V1F27f8pb0glCkelh3cVHLNiHAJ5gCaVtq2aNch8=" crossorigin="anonymous"></script>                <div id="d9d3a6b2-3a6b-4a10-aa5b-5b728355b99e" class="plotly-graph-div" style="height:100%; width:100%;"></div>
+            <div class="chart-box">            <script>                window.PLOTLYENV=window.PLOTLYENV || {};                                if (document.getElementById("d9d3a6b2-3a6b-4a10-aa5b-5b728355b99e")) {                    Plotly.newPlot(                        "d9d3a6b2-3a6b-4a10-aa5b-5b728355b99e",                        [{"customdata":[["native_text"],["failed"]],"domain":{"x":[0.0,1.0],"y":[0.0,1.0]},"hovertemplate":"Method=%{customdata[0]}\u003cbr\u003eCount=%{value}\u003cextra\u003e\u003c\u002fextra\u003e","labels":["native_text","failed"],"legendgroup":"","marker":{"colors":["#2ca02c","#d62728"]},"name":"","showlegend":true,"values":{"dtype":"i1","bdata":"Ggc="},"type":"pie"}],                        {"template":{"data":{"histogram2dcontour":[{"type":"histogram2dcontour","colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]]}],"choropleth":[{"type":"choropleth","colorbar":{"outlinewidth":0,"ticks":""}}],"histogram2d":[{"type":"histogram2d","colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]]}],"heatmap":[{"type":"heatmap","colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]]}],"contourcarpet":[{"type":"contourcarpet","colorbar":{"outlinewidth":0,"ticks":""}}],"contour":[{"type":"contour","colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]]}],"surface":[{"type":"surface","colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]]}],"mesh3d":[{"type":"mesh3d","colorbar":{"outlinewidth":0,"ticks":""}}],"scatter":[{"fillpattern":{"fillmode":"overlay","size":10,"solidity":0.2},"type":"scatter"}],"parcoords":[{"type":"parcoords","line":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"scatterpolargl":[{"type":"scatterpolargl","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"bar":[{"error_x":{"color":"#2a3f5f"},"error_y":{"color":"#2a3f5f"},"marker":{"line":{"color":"#E5ECF6","width":0.5},"pattern":{"fillmode":"overlay","size":10,"solidity":0.2}},"type":"bar"}],"scattergeo":[{"type":"scattergeo","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"scatterpolar":[{"type":"scatterpolar","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"histogram":[{"marker":{"pattern":{"fillmode":"overlay","size":10,"solidity":0.2}},"type":"histogram"}],"scattergl":[{"type":"scattergl","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"scatter3d":[{"type":"scatter3d","line":{"colorbar":{"outlinewidth":0,"ticks":""}},"marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"scattermap":[{"type":"scattermap","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"scatterternary":[{"type":"scatterternary","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"scattercarpet":[{"type":"scattercarpet","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"carpet":[{"aaxis":{"endlinecolor":"#2a3f5f","gridcolor":"white","linecolor":"white","minorgridcolor":"white","startlinecolor":"#2a3f5f"},"baxis":{"endlinecolor":"#2a3f5f","gridcolor":"white","linecolor":"white","minorgridcolor":"white","startlinecolor":"#2a3f5f"},"type":"carpet"}],"table":[{"cells":{"fill":{"color":"#EBF0F8"},"line":{"color":"white"}},"header":{"fill":{"color":"#C8D4E3"},"line":{"color":"white"}},"type":"table"}],"barpolar":[{"marker":{"line":{"color":"#E5ECF6","width":0.5},"pattern":{"fillmode":"overlay","size":10,"solidity":0.2}},"type":"barpolar"}],"pie":[{"automargin":true,"type":"pie"}]},"layout":{"autotypenumbers":"strict","colorway":["#636efa","#EF553B","#00cc96","#ab63fa","#FFA15A","#19d3f3","#FF6692","#B6E880","#FF97FF","#FECB52"],"font":{"color":"#2a3f5f"},"hovermode":"closest","hoverlabel":{"align":"left"},"paper_bgcolor":"white","plot_bgcolor":"#E5ECF6","polar":{"bgcolor":"#E5ECF6","angularaxis":{"gridcolor":"white","linecolor":"white","ticks":""},"radialaxis":{"gridcolor":"white","linecolor":"white","ticks":""}},"ternary":{"bgcolor":"#E5ECF6","aaxis":{"gridcolor":"white","linecolor":"white","ticks":""},"baxis":{"gridcolor":"white","linecolor":"white","ticks":""},"caxis":{"gridcolor":"white","linecolor":"white","ticks":""}},"coloraxis":{"colorbar":{"outlinewidth":0,"ticks":""}},"colorscale":{"sequential":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]],"sequentialminus":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]],"diverging":[[0,"#8e0152"],[0.1,"#c51b7d"],[0.2,"#de77ae"],[0.3,"#f1b6da"],[0.4,"#fde0ef"],[0.5,"#f7f7f7"],[0.6,"#e6f5d0"],[0.7,"#b8e186"],[0.8,"#7fbc41"],[0.9,"#4d9221"],[1,"#276419"]]},"xaxis":{"gridcolor":"white","linecolor":"white","ticks":"","title":{"standoff":15},"zerolinecolor":"white","automargin":true,"zerolinewidth":2},"yaxis":{"gridcolor":"white","linecolor":"white","ticks":"","title":{"standoff":15},"zerolinecolor":"white","automargin":true,"zerolinewidth":2},"scene":{"xaxis":{"backgroundcolor":"#E5ECF6","gridcolor":"white","linecolor":"white","showbackground":true,"ticks":"","zerolinecolor":"white","gridwidth":2},"yaxis":{"backgroundcolor":"#E5ECF6","gridcolor":"white","linecolor":"white","showbackground":true,"ticks":"","zerolinecolor":"white","gridwidth":2},"zaxis":{"backgroundcolor":"#E5ECF6","gridcolor":"white","linecolor":"white","showbackground":true,"ticks":"","zerolinecolor":"white","gridwidth":2}},"shapedefaults":{"line":{"color":"#2a3f5f"}},"annotationdefaults":{"arrowcolor":"#2a3f5f","arrowhead":0,"arrowwidth":1},"geo":{"bgcolor":"white","landcolor":"#E5ECF6","subunitcolor":"white","showland":true,"showlakes":true,"lakecolor":"white"},"title":{"x":0.05}}},"legend":{"tracegroupgap":0},"title":{"text":"Extraction Method Distribution"},"margin":{"t":40,"b":20,"l":20,"r":20},"height":350},                        {"responsive": true}                    )                };            </script>        </div>
+        </div>
+
+        <div class="table-container">
+            <h2 style="margin-top: 0;">Document Catalog & Severity Audit</h2>
+            
+    <table id="resourceTable" class="display">
+        <thead>
+            <tr>
+                <th>Document Title</th>
+                <th>Subject</th>
+                <th>Year</th>
+                <th>Type</th>
+                <th>Extraction</th>
+                <th>Pages</th>
+                <th>Text Length</th>
+                <th>Severity</th>
+            </tr>
+        </thead>
+        <tbody>
+            
+        <tr>
+            <td>Physics PYQ 2024</td>
+            <td>Physics</td>
+            <td>2024</td>
+            <td>Previous Year Paper</td>
+            <td>Native Text</td>
+            <td>8</td>
+            <td>23,052</td>
+            <td><span class="badge success">SUCCESS</span></td>
+        </tr>
+        
+        <tr>
+            <td>Physics PYQ 2025</td>
+            <td>Physics</td>
+            <td>2025</td>
+            <td>Previous Year Paper</td>
+            <td>Native Text</td>
+            <td>12</td>
+            <td>36,322</td>
+            <td><span class="badge success">SUCCESS</span></td>
+        </tr>
+        
+        <tr>
+            <td>Physics PYQ 2022 Sem 2</td>
+            <td>Physics</td>
+            <td>2022</td>
+            <td>Previous Year Paper</td>
+            <td>Native Text</td>
+            <td>5</td>
+            <td>12,457</td>
+            <td><span class="badge success">SUCCESS</span></td>
+        </tr>
+        
+        <tr>
+            <td>Physics PYQ 2025 Board</td>
+            <td>Physics</td>
+            <td>2025</td>
+            <td>Previous Year Paper</td>
+            <td>Failed</td>
+            <td>0</td>
+            <td>0</td>
+            <td><span class="badge warning">WARNING</span></td>
+        </tr>
+        
+        <tr>
+            <td>Physics PYQ 2025 ICSEBoard</td>
+            <td>Physics</td>
+            <td>2025</td>
+            <td>Previous Year Paper</td>
+            <td>Failed</td>
+            <td>0</td>
+            <td>0</td>
+            <td><span class="badge warning">WARNING</span></td>
+        </tr>
+        
+        <tr>
+            <td>Physics Sample Paper Sem 1 2022</td>
+            <td>Physics</td>
+            <td>2022</td>
+            <td>Sample Paper</td>
+            <td>Native Text</td>
+            <td>17</td>
+            <td>21,299</td>
+            <td><span class="badge success">SUCCESS</span></td>
+        </tr>
+        
+        <tr>
+            <td>Physics Specimen 2024</td>
+            <td>Physics</td>
+            <td>2024</td>
+            <td>Specimen Paper</td>
+            <td>Failed</td>
+            <td>0</td>
+            <td>0</td>
+            <td><span class="badge warning">WARNING</span></td>
+        </tr>
+        
+        <tr>
+            <td>Maths PYQ 2025 ICSEBoard</td>
+            <td>Mathematics</td>
+            <td>2025</td>
+            <td>Previous Year Paper</td>
+            <td>Native Text</td>
+            <td>11</td>
+            <td>383</td>
+            <td><span class="badge warning">WARNING</span></td>
+        </tr>
+        
+        <tr>
+            <td>Maths PYQ 2025 Oswaal</td>
+            <td>Mathematics</td>
+            <td>2025</td>
+            <td>Previous Year Paper</td>
+            <td>Native Text</td>
+            <td>11</td>
+            <td>383</td>
+            <td><span class="badge warning">WARNING</span></td>
+        </tr>
+        
+        <tr>
+            <td>Maths PYQ 2024 Oswaal</td>
+            <td>Mathematics</td>
+            <td>2024</td>
+            <td>Previous Year Paper</td>
+            <td>Native Text</td>
+            <td>14</td>
+            <td>32,635</td>
+            <td><span class="badge success">SUCCESS</span></td>
+        </tr>
+        
+        <tr>
+            <td>Maths PYQ 2024 CollegeDekho</td>
+            <td>Mathematics</td>
+            <td>2024</td>
+            <td>Previous Year Paper</td>
+            <td>Native Text</td>
+            <td>18</td>
+            <td>18,844</td>
+            <td><span class="badge success">SUCCESS</span></td>
+        </tr>
+        
+        <tr>
+            <td>Maths PYQ 2024 SheetDigest</td>
+            <td>Mathematics</td>
+            <td>2024</td>
+            <td>Previous Year Paper</td>
+            <td>Native Text</td>
+            <td>18</td>
+            <td>18,844</td>
+            <td><span class="badge success">SUCCESS</span></td>
+        </tr>
+        
+        <tr>
+            <td>Maths Sample Paper Sem 1 2022</td>
+            <td>Mathematics</td>
+            <td>2022</td>
+            <td>Sample Paper</td>
+            <td>Native Text</td>
+            <td>10</td>
+            <td>10,323</td>
+            <td><span class="badge success">SUCCESS</span></td>
+        </tr>
+        
+        <tr>
+            <td>Maths QB Solved 2018</td>
+            <td>Mathematics</td>
+            <td>2018</td>
+            <td>Question Bank</td>
+            <td>Native Text</td>
+            <td>27</td>
+            <td>39,646</td>
+            <td><span class="badge success">SUCCESS</span></td>
+        </tr>
+        
+        <tr>
+            <td>Chemistry PYQ 2023 Oswaal</td>
+            <td>Chemistry</td>
+            <td>2023</td>
+            <td>Previous Year Paper</td>
+            <td>Native Text</td>
+            <td>8</td>
+            <td>21,612</td>
+            <td><span class="badge success">SUCCESS</span></td>
+        </tr>
+        
+        <tr>
+            <td>Chemistry PYQ 2023 SheetDigest</td>
+            <td>Chemistry</td>
+            <td>2023</td>
+            <td>Previous Year Paper</td>
+            <td>Native Text</td>
+            <td>8</td>
+            <td>21,612</td>
+            <td><span class="badge success">SUCCESS</span></td>
+        </tr>
+        
+        <tr>
+            <td>Chemistry Practical 2020 Byjus</td>
+            <td>Chemistry</td>
+            <td>2020</td>
+            <td>Previous Year Paper</td>
+            <td>Native Text</td>
+            <td>4</td>
+            <td>6,889</td>
+            <td><span class="badge success">SUCCESS</span></td>
+        </tr>
+        
+        <tr>
+            <td>Chemistry Syllabus & QB 2024-25</td>
+            <td>Chemistry</td>
+            <td>2024</td>
+            <td>Question Bank</td>
+            <td>Native Text</td>
+            <td>12</td>
+            <td>46,050</td>
+            <td><span class="badge success">SUCCESS</span></td>
+        </tr>
+        
+        <tr>
+            <td>Biology PYQ 2023 Oswaal</td>
+            <td>Biology</td>
+            <td>2023</td>
+            <td>Previous Year Paper</td>
+            <td>Native Text</td>
+            <td>10</td>
+            <td>21,976</td>
+            <td><span class="badge success">SUCCESS</span></td>
+        </tr>
+        
+        <tr>
+            <td>Biology PYQ 2025 Oswaal</td>
+            <td>Biology</td>
+            <td>2025</td>
+            <td>Previous Year Paper</td>
+            <td>Native Text</td>
+            <td>9</td>
+            <td>29,857</td>
+            <td><span class="badge success">SUCCESS</span></td>
+        </tr>
+        
+        <tr>
+            <td>Biology PYQ 2024 SheetDigest</td>
+            <td>Biology</td>
+            <td>2024</td>
+            <td>Previous Year Paper</td>
+            <td>Failed</td>
+            <td>0</td>
+            <td>0</td>
+            <td><span class="badge warning">WARNING</span></td>
+        </tr>
+        
+        <tr>
+            <td>Biology PYQ 2025 ICSEBoard</td>
+            <td>Biology</td>
+            <td>2025</td>
+            <td>Previous Year Paper</td>
+            <td>Native Text</td>
+            <td>11</td>
+            <td>383</td>
+            <td><span class="badge warning">WARNING</span></td>
+        </tr>
+        
+        <tr>
+            <td>Biology PYQ 2025 CollegeDunia</td>
+            <td>Biology</td>
+            <td>2025</td>
+            <td>Previous Year Paper</td>
+            <td>Failed</td>
+            <td>0</td>
+            <td>0</td>
+            <td><span class="badge warning">WARNING</span></td>
+        </tr>
+        
+        <tr>
+            <td>Biology PYQ 2020 Byjus</td>
+            <td>Biology</td>
+            <td>2020</td>
+            <td>Previous Year Paper</td>
+            <td>Native Text</td>
+            <td>5</td>
+            <td>7,406</td>
+            <td><span class="badge success">SUCCESS</span></td>
+        </tr>
+        
+        <tr>
+            <td>Biology QB Solved 2016</td>
+            <td>Biology</td>
+            <td>2016</td>
+            <td>Question Bank</td>
+            <td>Native Text</td>
+            <td>19</td>
+            <td>34,412</td>
+            <td><span class="badge success">SUCCESS</span></td>
+        </tr>
+        
+        <tr>
+            <td>Biology PYQ 2017 Byjus</td>
+            <td>Biology</td>
+            <td>2017</td>
+            <td>Previous Year Paper</td>
+            <td>Native Text</td>
+            <td>5</td>
+            <td>3,955</td>
+            <td><span class="badge success">SUCCESS</span></td>
+        </tr>
+        
+        <tr>
+            <td>CS PYQ 2023 Oswaal Solved</td>
+            <td>Computer Science</td>
+            <td>2023</td>
+            <td>Question Bank</td>
+            <td>Native Text</td>
+            <td>13</td>
+            <td>23,053</td>
+            <td><span class="badge success">SUCCESS</span></td>
+        </tr>
+        
+        <tr>
+            <td>CS PYQ 2024 Oswaal</td>
+            <td>Computer Science</td>
+            <td>2024</td>
+            <td>Previous Year Paper</td>
+            <td>Native Text</td>
+            <td>11</td>
+            <td>16,213</td>
+            <td><span class="badge success">SUCCESS</span></td>
+        </tr>
+        
+        <tr>
+            <td>CS PYQ 2025 ICSEBoard</td>
+            <td>Computer Science</td>
+            <td>2025</td>
+            <td>Previous Year Paper</td>
+            <td>Native Text</td>
+            <td>15</td>
+            <td>523</td>
+            <td><span class="badge warning">WARNING</span></td>
+        </tr>
+        
+        <tr>
+            <td>CS PYQ 2025 SheetDigest</td>
+            <td>Computer Science</td>
+            <td>2025</td>
+            <td>Previous Year Paper</td>
+            <td>Failed</td>
+            <td>0</td>
+            <td>0</td>
+            <td><span class="badge warning">WARNING</span></td>
+        </tr>
+        
+        <tr>
+            <td>CS PYQ 2024 SheetDigest</td>
+            <td>Computer Science</td>
+            <td>2024</td>
+            <td>Previous Year Paper</td>
+            <td>Failed</td>
+            <td>0</td>
+            <td>0</td>
+            <td><span class="badge warning">WARNING</span></td>
+        </tr>
+        
+        <tr>
+            <td>CS Specimen 2024 CollegeDekho</td>
+            <td>Computer Science</td>
+            <td>2024</td>
+            <td>Specimen Paper</td>
+            <td>Native Text</td>
+            <td>23</td>
+            <td>32,307</td>
+            <td><span class="badge success">SUCCESS</span></td>
+        </tr>
+        
+        <tr>
+            <td>CS Syllabus 2024</td>
+            <td>Computer Science</td>
+            <td>2024</td>
+            <td>Official Syllabus</td>
+            <td>Native Text</td>
+            <td>11</td>
+            <td>34,299</td>
+            <td><span class="badge success">SUCCESS</span></td>
+        </tr>
+        
+        </tbody>
+    </table>
+    
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.7.0.min.js"></script>
+    <script src="https://cdn.datatables.net/1.13.6/js/jquery.dataTables.min.js"></script>
+    <script src="https://cdn.plot.ly/plotly-2.27.0.min.js"></script>
+    <script>
+        $(document).ready(function() {
+            $('#resourceTable').DataTable({
+                "pageLength": 10,
+                "order": [[ 7, "asc" ]]
+            });
+        });
+    </script>
+</body>
+</html>
+    
